@@ -2,10 +2,12 @@
 # in the same project.
 
 # The name of this app. Must be unique within a project.
-name: blog
+name: events
+source:
+  root: "/"
 
 # The toolstack used to build the application.
-type: nodejs:10
+type: nodejs:14
 build:
   flavor: none
 
@@ -23,11 +25,11 @@ web:
     start: sleep infinity
   locations:
     "/":
-      root: "_blog"
+      root: "_events"
       index:
         - "index.html"
-      expires: 300s
-      passthru: false
+      expires: 1y
+      passthru: "/404.html"
       scripts: true
       allow: false
       rules:

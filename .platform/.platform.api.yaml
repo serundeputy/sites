@@ -1,5 +1,7 @@
 name: api
-type: nodejs:10
+source:
+  root: "/"
+type: nodejs:14
 
 dependencies:
   nodejs:

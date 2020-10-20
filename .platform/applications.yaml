@@ -1,1 +1,8 @@
-applications.yam
+# API
+- !include ".platform.api.yaml"
+# BLOG
+- !include ".platform.blog.yaml"
+# EVENTS
+- !include ".platform.events.yaml"
+# WEBSITE
+- !include ".platform.website.yaml"
