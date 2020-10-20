@@ -1,0 +1,33 @@
+language: node_js
+node_js: 14
+dist: xenial
+cache:
+  yarn: true
+  directories:
+    - node_modules
+stages:
+  - test
+  - build
+
+# Run some sanity checks
+before_script:
+  - node --version
+  - yarn --version
+
+install: yarn
+
+jobs:
+  include:
+    # Tests
+    - stage: test
+      name: Test
+      script:
+        - yarn test
+
+    # Build
+    - stage: build
+      name: Build
+      script:
+        - yarn build:blog
+        - yarn build:events
+        - yarn build:site

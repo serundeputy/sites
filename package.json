@@ -1,0 +1,62 @@
+{
+  "name": "lando-sites",
+  "description": "Sites for the best local development solution in the galaxy.",
+  "license": "GPL-3.0",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lando/sites"
+  },
+  "bugs": {
+    "email": "mike@lando.dev",
+    "url": "https://github.com/lando/sites/issues"
+  },
+  "scripts": {
+    "build:blog": "vuepress build blog -d _blog",
+    "build:events": "vuepress build events -d _events",
+    "build:site": "vuepress build website -d _site",
+    "lint": "eslint --quiet --no-ignore api",
+    "lint:sites": "eslint  --quiet --ext .js,.vue --config .eslintrc.vuepress.json blog/.vuepress events/.vuepress website/.vuepress",
+    "release": "bump --prompt --tag --all --push",
+    "dev:api": "./node_modules/nodemon/bin/nodemon.js ./api/server.js",
+    "dev:blog": "vuepress dev --temp /tmp/lando-blog --cache /tmp/lando-blog-cache --port 8007 blog",
+    "dev:events": "vuepress dev --temp /tmp/lando-events --cache /tmp/lando-events-cache --port 8006 events",
+    "dev:site": "vuepress dev --temp /tmp/lando-site --cache /tmp/lando-site-cache --port 8009 website",
+    "test": "yarn lint && yarn lint:sites"
+  },
+  "dependencies": {
+    "@octokit/rest": "^17.1.0",
+    "body-parser": "^1.14.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.13.3",
+    "js-yaml": "^3.13.1",
+    "lodash": "~4.17.19",
+    "mailchimp-api-v3": "^1.13.1",
+    "platformsh": "^1.0.0",
+    "slack-notify": "^0.1.7",
+    "winston": "2.2"
+  },
+  "devDependencies": {
+    "axios": "^0.19.0",
+    "@vuepress/plugin-blog": "^1.9.2",
+    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
+    "@vuepress/theme-blog": "^2.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "mailchimp-api-v3": "^1.13.1",
+    "nodemon": "^1.11.0",
+    "version-bump-prompt": "^4.2.1",
+    "vue-feather-icons": "^5.0.0",
+    "vue2-google-maps": "^0.10.7",
+    "vuepress": "^1.0.4",
+    "vuepress-plugin-autometa": "^0.1.12",
+    "vuepress-plugin-canonical": "^1.0.0",
+    "vuepress-plugin-container": "^2.1.2",
+    "vuepress-plugin-feed": "^0.1.8",
+    "vuepress-plugin-robots": "^1.0.1",
+    "vuepress-plugin-sitemap": "https://github.com/ekoeryanto/vuepress-plugin-sitemap#dd8b9763b2c7939668a67f2afa34de501dea45d4"
+  }
+}
