@@ -10,7 +10,7 @@ dependencies:
 
 web:
   commands:
-    start: "PM2_HOME=$PLATFORM_APP_DIR/run pm2 start server.js --no-daemon"
+    start: "pm2 start /app/api/server.js --no-daemon"
   locations:
     "/public":
       passthru: false
