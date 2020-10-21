@@ -18,6 +18,22 @@ module.exports = {
     ['link', {rel: 'stylesheet', href: '//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css'}],
     ['script', {src: '//js.hs-scripts.com/6478338.js'}],
   ],
+
+/*
+    ['meta', {name: 'viewport', content: 'width=device-width, initial-scale=1'}],
+    ['link', {rel: 'icon', href: '/favicon.png'}],
+    ['link', {rel: 'stylesheet', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css'}],
+    ['link', {rel: 'preload', href: '/fonts/poppins-v12-latin-600.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
+    ['link', {rel: 'preload', href: '/fonts/poppins-v12-latin-900.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
+    ['link', {rel: 'preload', href: '/fonts/GalaxieCopernicus-Book.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
+    ['link', {rel: 'preload', href: '/fonts/GalaxieCopernicus-Medium.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
+    ['link', {rel: 'preload', href: '/fonts/AvenirNext-Heavy.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
+    ['link', {rel: 'preload', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css', as: 'style', crossorigin: 'true'}],
+    ['link', {rel: 'preconnect', href: '//js.hs-scripts.com/6864374.js', crossorigin: 'true'}],
+    ['link', {rel: 'preconnect', href: 'https://www.google-analytics.com/analytics.js', crossorigin: 'true'}],
+    ['script', {src: '//js.hs-scripts.com/6864374.js', defer: true, async: true}],
+*/
+
   plugins: {
     '@vuepress/google-analytics': {
       ga: 'UA-74237404-3',
@@ -40,15 +56,6 @@ module.exports = {
         {
           userAgent: '*',
           disallow: [
-            '/alliance/thanks',
-            '/info/',
-            '/sponsor/ally/',
-            '/sponsor/herald/',
-            '/sponsor/hero/',
-            '/sponsor/partner/',
-            '/sponsor/patriot/',
-            '/sponsor/subscribe/',
-            '/sponsor/thanks/',
             '/thanks/',
           ],
         },
@@ -58,15 +65,6 @@ module.exports = {
       hostname: 'https://lando.dev',
       exclude: [
         '/404.html',
-        '/alliance/thanks',
-        '/info/',
-        '/sponsor/ally/',
-        '/sponsor/herald/',
-        '/sponsor/hero/',
-        '/sponsor/partner/',
-        '/sponsor/patriot/',
-        '/sponsor/subscribe/',
-        '/sponsor/thanks/',
         '/thanks/',
       ],
     },
@@ -79,8 +77,7 @@ module.exports = {
     editLinks: false,
     nav: [
       {text: 'Get Lando!', link: '/download/'},
-      {text: 'Join The Alliance', link: '/alliance/join/'},
-      {text: 'Sponsor', link: '/sponsor/'},
+      {text: 'Sponsor', link: 'https://github.com/sponsors/lando'},
       {text: 'Documentation', link: 'https://docs.lando.dev'},
       {text: 'Blog', link: 'https://blog.lando.dev'},
       {text: 'Events & Meetups', link: 'https://events.lando.dev'},
