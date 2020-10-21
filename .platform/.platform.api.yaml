@@ -5,12 +5,12 @@ type: nodejs:14
 
 dependencies:
   nodejs:
-    pm2: "^2.0.0"
+    pm2: "^4.0.0"
     yarn: "*"
 
 web:
   commands:
-    start: "pm2 start /app/api/server.js --no-daemon"
+    start: "PM2_HOME=/app/run pm2 start /app/api/server.js --no-daemon"
   locations:
     "/public":
       passthru: false
