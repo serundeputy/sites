@@ -1,3 +1,4 @@
+# Legacy
 - name: Tandem
   type: patriot
   logo: https://avatars3.githubusercontent.com/u/20853287?s=400&u=e12319da4212a4b58c6318bfa60cc12848cc2384&v=4
@@ -133,6 +134,7 @@
 - name: "@samaphp"
   type: herald
   url: https://github.com/samaphp
+
 # July 22, 2020
 - name: "Sagetree"
   type: ally

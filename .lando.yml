@@ -1,6 +1,8 @@
 name: lando-sites
 env_file:
   - lando.env
+excludes:
+  - node_modules
 proxy:
   api:
     - api.lndo.site:8010
