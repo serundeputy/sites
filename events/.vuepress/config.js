@@ -8,6 +8,7 @@ module.exports = {
       new webpack.EnvironmentPlugin({
         LANDO_API: process.env.LANDO_API || 'https://api.lando.dev',
         LANDO_GOOGLE_API_KEY: process.env.LANDO_GOOGLE_API_KEY,
+        TEST: 'redeploy',
       }),
     ]};
   },
