@@ -22,7 +22,9 @@ web:
           expires: -1
 
 mounts:
-  "/run": "shared:files/run"
+  run:
+    source: local
+    source_path: run
 
 disk: 1500
 

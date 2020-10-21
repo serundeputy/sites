@@ -19,9 +19,9 @@
     "lint:sites": "eslint  --quiet --ext .js,.vue --config .eslintrc.vuepress.json blog/.vuepress events/.vuepress website/.vuepress",
     "release": "bump --prompt --tag --all --push",
     "dev:api": "./node_modules/nodemon/bin/nodemon.js ./api/server.js",
-    "dev:blog": "vuepress dev --temp /tmp/lando-blog --cache /tmp/lando-blog-cache --port 8007 blog",
-    "dev:events": "vuepress dev --temp /tmp/lando-events --cache /tmp/lando-events-cache --port 8006 events",
-    "dev:site": "vuepress dev --temp /tmp/lando-site --cache /tmp/lando-site-cache --port 8009 website",
+    "dev:blog": "vuepress dev --temp /tmp/lando-blog --cache /tmp/lando-blog-cache --port 8011 blog",
+    "dev:events": "vuepress dev --temp /tmp/lando-events --cache /tmp/lando-events-cache --port 8012 events",
+    "dev:site": "vuepress dev --temp /tmp/lando-site --cache /tmp/lando-site-cache --port 8013 website",
     "test": "yarn lint && yarn lint:sites"
   },
   "dependencies": {

@@ -14,6 +14,7 @@ const defaultConfig = {
   'LANDO_API_PORT': 80,
   'LANDO_API_TIMEOUT': 10000,
   'LANDO_API_ALLOWED_ORIGINS': [
+    /http:\/\/localhost/,
     /https:\/\/([a-z0-9]+[.])*lando[.]dev/,
     /https:\/\/([a-z0-9]+[.])*lndo[.]site/,
     /https?:\/\/([a-z0-9]+[.])*iaimrn624qfk6[.]us[.]platform[.]sh/,
