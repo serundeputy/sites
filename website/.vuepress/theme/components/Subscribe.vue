@@ -109,37 +109,6 @@ export default {
       opacity: .5
   .hidden-field
     visibility: hidden
-  .subscribe-alliance,
-  .subscribe-devnetwork,
-  .subscribe-sponsors
-    padding-top: 2em
-    padding-bottom: 2em
-    p
-      color: lighten($landoBlue, 90%)
-      font-size: 1.2em
-    .subscribe-alliance-wrapper,
-    .subscribe-devnetwork-checkbox,
-    .subscribe-sponsors-wrapper
-      padding-top: 1em
-      padding-bottom: 1em
-      input.subscribe-alliance-checkbox
-        font-size: 16px
-      label
-        cursor: pointer
-        color: lighten($landoBlue, 90%)
-        font-size: 2em
-        font-weight: 800
-      small
-        font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-        color: lighten($landoBlue, 90%)
-        text-align: center;
-        font-size: 1.4em;
-        letter-spacing: 0;
-    .subscribe-devnetwork-checkbox
-      padding-top: .5em
-      padding-bottom: .5em
-      label
-        font-size: 1em
   .subscribe-input
     width: 100%
     box-sizing: border-box
@@ -155,15 +124,6 @@ export default {
       border-color: lighten($landoPink, 18%)
     &.disabled
       opacity: .5
-  .subscribe-error,
-  .subscribe-success
-    padding: 1em;
-    color: red;
-    text-transform: uppercase
-    font-weight: 800
-    font-size: 0.75rem
-  .subscribe-success
-    color: $landoPink
 @media (max-width: $MQMobile)
   .subscribe
     .subscribe-input

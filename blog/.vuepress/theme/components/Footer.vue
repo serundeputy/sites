@@ -17,7 +17,7 @@
         <a target="_blank" href="https://docs.lando.dev">Documentation</a> |
         <a target="_blank" href="https://events.lando.dev/">Events & Meetups</a> |
         <a target="_blank" href="https://lando.dev/sponsor">Sponsor</a> |
-        <a target="_blank" href="https://lando.dev/join">Join the Alliance</a>
+        <a target="_blank" href="https://lando.dev/join">Contribute</a>
       </div>
       <div>
         <a href="/terms/">Terms</a> |

@@ -60,7 +60,7 @@
         <a target="_blank" href="https://lando.dev">why lando?</a> |
         <a target="_blank" href="https://blog.lando.dev">blog</a> |
         <a target="_blank" href="https://lando.dev/sponsor">sponsor</a> |
-        <a target="_blank" href="https://lando.dev/join">join</a> |
+        <a target="_blank" href="https://lando.dev/join">contribute</a> |
         <a @click="evangelistToggle" href="#">evangelists</a> |
         <a class="special-link" @click="newsletterToggle" href="#">get events updates</a> |
         <a target="_blank" class="special-link" href="https://docs.lando.dev/contrib/evangelist-events.html">add your event</a>
