@@ -5779,7 +5779,7 @@ macos-release@^2.2.0:
   resolved "https://registry.yarnpkg.com/macos-release/-/macos-release-2.4.1.tgz#64033d0ec6a5e6375155a74b1a1eba8e509820ac"
   integrity sha512-H/QHeBIN1fIGJX517pvK8IEK53yQOW7YcEI55oYtgjDdoCQQz7eJS94qt5kNrscReEyuD/JcdFCm2XBEcGOITg==
 
-mailchimp-api-v3@^1.13.1:
+mailchimp-api-v3@^1.14.0:
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/mailchimp-api-v3/-/mailchimp-api-v3-1.14.0.tgz#aeccf66a0232f68be2d01401bf827d6505b61dd8"
   integrity sha512-DGeEuRYrpL1lr8ZL4PAmx+l2hRuGy+SYKnBfEYJCG+QLEiwMAImXaZO91s51I2VFfwoEHEwqrjZLouV+sBXG3w==

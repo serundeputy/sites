@@ -148,7 +148,7 @@
               </h3>
               <Subscribe
                 :customStyles="customStyles"
-                :groups="groups"
+                :interests="interests"
                 theme="dark"
                 :title="title"/>
              </div>
@@ -174,7 +174,13 @@ export default {
         padding: 0,
       },
       title: '',
-      groups: ['NEWSLETTER'],
+      interests: [{
+        id: 1,
+        group: 37781,
+        checked: true,
+        hidden: true,
+        label: 'Updates',
+      }],
     };
   },
 };

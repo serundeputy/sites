@@ -16,24 +16,10 @@ module.exports = {
     ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Poppins:700|Source+Sans+Pro&display=swap'}],
     ['link', {rel: 'stylesheet', href: '//cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css'}],
     ['link', {rel: 'stylesheet', href: '//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css'}],
-    ['script', {src: '//js.hs-scripts.com/6478338.js'}],
-  ],
-
-/*
-    ['meta', {name: 'viewport', content: 'width=device-width, initial-scale=1'}],
-    ['link', {rel: 'icon', href: '/favicon.png'}],
-    ['link', {rel: 'stylesheet', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css'}],
-    ['link', {rel: 'preload', href: '/fonts/poppins-v12-latin-600.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
-    ['link', {rel: 'preload', href: '/fonts/poppins-v12-latin-900.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
-    ['link', {rel: 'preload', href: '/fonts/GalaxieCopernicus-Book.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
-    ['link', {rel: 'preload', href: '/fonts/GalaxieCopernicus-Medium.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
-    ['link', {rel: 'preload', href: '/fonts/AvenirNext-Heavy.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
-    ['link', {rel: 'preload', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css', as: 'style', crossorigin: 'true'}],
     ['link', {rel: 'preconnect', href: '//js.hs-scripts.com/6864374.js', crossorigin: 'true'}],
     ['link', {rel: 'preconnect', href: 'https://www.google-analytics.com/analytics.js', crossorigin: 'true'}],
-    ['script', {src: '//js.hs-scripts.com/6864374.js', defer: true, async: true}],
-*/
-
+    ['script', {src: '//js.hs-scripts.com/6864374.js'}],
+  ],
   plugins: {
     '@vuepress/google-analytics': {
       ga: 'UA-74237404-3',
@@ -81,7 +67,7 @@ module.exports = {
       {text: 'Documentation', link: 'https://docs.lando.dev'},
       {text: 'Blog', link: 'https://blog.lando.dev'},
       {text: 'Events & Meetups', link: 'https://events.lando.dev'},
-      {text: 'Services & Support', link: '/contact/'},
+      {text: 'Services & Support', link: 'https://thinktandem.io/contact/'},
     ],
   },
 };
