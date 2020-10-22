@@ -9,7 +9,6 @@
         :date="$frontmatter.date"
         :location="$frontmatter.location"
       />
-      <SponsorsList />
       <CarbonAds />
       <Content />
       <hr />
@@ -28,10 +27,9 @@ import CarbonAds from '@theme/components/CarbonAds.vue';
 import PostHeader from '@theme/components/PostHeader.vue';
 import PostFooter from '@theme/components/PostFooter.vue';
 import Toc from '@theme/components/Toc.vue';
-import SponsorsList from '@theme/components/SponsorsList.vue';
 
 export default {
-  components: {CarbonAds, PostHeader, PostFooter, SponsorsList, Toc}, // eslint-disable-line
+  components: {CarbonAds, PostHeader, PostFooter, Toc}, // eslint-disable-line
   mounted() {
     console.log(this);
   },

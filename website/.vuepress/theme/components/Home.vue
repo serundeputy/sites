@@ -16,9 +16,8 @@
               <div class="hero-primary">
                 <a class="button blue" href="/download/">GET LANDO!</a>
               </div>
-              <div class="hero-secondary">
-                <a class="button" href="/alliance/join/">JOIN</a>
-                <a class="button" href="/sponsor">SPONSOR</a>
+              <div class="hero-primary">
+                <a class="button" href="https://github.com/sponsors/lando" target="_blank">SPONSOR</a>
               </div>
             </div>
           </div>
@@ -118,7 +117,6 @@ import Usage from '@theme/components/Usage.vue';
 // Hideable menu ids
 const toggleableMenu = [
   'nav-item-get-lando',
-  'nav-item-join-the alliance',
   'nav-item-sponsor',
 ];
 

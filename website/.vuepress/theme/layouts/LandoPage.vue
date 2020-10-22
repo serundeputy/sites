@@ -10,23 +10,12 @@
         </div>
       </div>
     </div>
-    <div id="hs_form" v-if="form" slot="page-bottom">
-      <div class="inner">
-        <HSForm :form="form" :formHeight="formHeight" />
-      </div>
-    </div>
-    <div id="subscribe" v-else-if="Object.keys(subscribe).length > 0" slot="page-bottom">
+    <div id="subscribe" v-if="Object.keys(subscribe).length > 0" slot="page-bottom">
       <div class="inner">
         <Subscribe
           :buttonLabel="subscribe.buttonLabel"
           :customStyles="subscribe.customStyles"
-          :groups="subscribe.groups"
-          :passcode="subscribe.passcode"
-          :redirect="subscribe.redirect"
-          :successMessage="subscribe.successMessage"
-          :showAlliance="subscribe.showAlliance"
-          :showDevNetwork="subscribe.showDevNetwork"
-          :showSponsors="subscribe.showSponsors"
+          :interests="subscribe.interests"
           :theme="subscribe.theme"
           :title="subscribe.title"/>
       </div>
@@ -37,11 +26,10 @@
 <script>
 // Lando components
 import ParentLayout from '@theme/layouts/Layout.vue';
-import HSForm from '@theme/components/HSForm';
 import Subscribe from '@theme/components/Subscribe';
 
 export default {
-  components: {HSForm, ParentLayout, Subscribe},
+  components: {ParentLayout, Subscribe},
   data() {
     return {
       byline: '',

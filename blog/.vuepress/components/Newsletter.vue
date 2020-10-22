@@ -6,6 +6,7 @@
       <Subscribe
         successMessage="More awesome blog material will be heading your way!"
         :customStyles="stylez"
+        :interests="interests"
         title=""
       />
     </div>
@@ -21,6 +22,13 @@ export default {
   components: {NewsletterStyles, Subscribe}, // eslint-disable-line
   data() {
     return {
+      interests: [{
+        id: 1,
+        group: 37781,
+        checked: true,
+        hidden: true,
+        label: 'Updates',
+      }],
       stylez: {
         width: '100%',
       },
@@ -34,10 +42,6 @@ export default {
   .subscribe
     width: 100%
     padding: 0
-  .subscribe-form
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-gap: 10px
   .subscribe .button
     font-size: inherit
     border: none

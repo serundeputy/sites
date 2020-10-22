@@ -12,9 +12,17 @@ subscribe:
   customStyles:
     width: 40%
     margin-top: -100px
-  groups:
-    - NEWUSER
-    - NEWSLETTER
+  interests:
+    - id: 1
+      group: 37781
+      checked: true
+      hidden: true
+      label: Updates
+    - id: 2
+      group: 37781
+      checked: true
+      hidden: true
+      label: Training
 ---
 
 <div class="step step-full">
