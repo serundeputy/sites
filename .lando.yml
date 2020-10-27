@@ -4,8 +4,6 @@ env_file:
 excludes:
   - node_modules
 proxy:
-  api:
-    - api.lndo.site:8010
   cli:
     - blog.lndo.site:8011
     - events.lndo.site:8012
@@ -19,21 +17,10 @@ services:
     ssl: true
     sslExpose: false
     overrides:
-      environment:
-        LANDO_API: https://api.lndo.site
       ports:
         - '8011:8011'
         - '8012:8012'
         - '8013:8013'
-  api:
-    type: node:14
-    command: yarn run dev:api
-    overrides:
-      environment:
-        LANDO_API_PORT: 8010
-    port: 8010
-    ssl: true
-    sslExpose: false
   platform:
     type: php:7.3
     via: cli

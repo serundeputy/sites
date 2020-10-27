@@ -9,9 +9,9 @@ export default ({ Vue, options, router, siteData }) => { // eslint-disable-line
     Vue.use({
       install(Vue) {
         Object.defineProperties(Vue.prototype, {
-          $api: {
+          $events: {
             get() {
-              return axios.create({baseURL: process.env.LANDO_API});
+              return require('./public/api/events.json');
             },
           },
           $gmaps: {

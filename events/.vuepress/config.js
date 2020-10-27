@@ -6,7 +6,7 @@ module.exports = {
   configureWebpack: config => {
     return {plugins: [
       new webpack.EnvironmentPlugin({
-        LANDO_API: process.env.LANDO_API || 'https://api.lando.dev',
+        LANDO_DOCS_API: process.env.LANDO_DOCS_API || 'https://docs.lando.dev/api',
         LANDO_GOOGLE_API_KEY: process.env.LANDO_GOOGLE_API_KEY,
       }),
     ]};

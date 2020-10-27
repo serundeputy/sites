@@ -1,5 +1,3 @@
-# API
-- !include ".platform.api.yaml"
 # BLOG
 - !include ".platform.blog.yaml"
 # EVENTS
