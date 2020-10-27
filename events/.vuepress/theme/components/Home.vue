@@ -41,17 +41,11 @@
           <p>Check back soon or <a href="https://docs.lando.dev/contrib/evangelist-events.html">add your event</a> to the listing!</p>
         </div>
       </div>
-      <div v-if="selector === 'evangelists'" class="listing-member">
-        <TeamMember v-for="member in evangelists" :key="member.id" :member="member" />
-      </div>
       <div v-else-if="selector === 'newsletter'" class="newsletter-wrapper">
         <Newsletter />
       </div>
       <div class="newsletter-wrapper-mobile">
         <Newsletter />
-      </div>
-      <div class="listing-member-mobile">
-        <TeamMember v-for="member in evangelists" :key="member.id" :member="member" />
       </div>
       <div class="footer">
         <a target="_blank" href="https://twitter.com/devwithlando">follow us</a> |
@@ -60,8 +54,8 @@
         <a target="_blank" href="https://lando.dev">why lando?</a> |
         <a target="_blank" href="https://blog.lando.dev">blog</a> |
         <a target="_blank" href="https://lando.dev/sponsor">sponsor</a> |
-        <a target="_blank" href="https://lando.dev/join">contribute</a> |
-        <a @click="evangelistToggle" href="#">evangelists</a> |
+        <a target="_blank" href="https://docs.lando.dev/contrib/contributing.html">contribute</a> |
+        <a target="_blank" href="https://docs.lando.dev/contrib/team.html">evangelists</a> |
         <a class="special-link" @click="newsletterToggle" href="#">get events updates</a> |
         <a target="_blank" class="special-link" href="https://docs.lando.dev/contrib/evangelist-events.html">add your event</a>
         <span class="copyright">copyright © 2016-present Tandem | </span>
@@ -78,12 +72,11 @@
 import dayjs from 'dayjs';
 import Map from '@theme/components/Map.vue';
 import EventCard from '@theme/components/EventCard.vue';
-import TeamMember from '@theme/components/TeamMember.vue';
 import {gmapApi} from 'vue2-google-maps';
 
 export default {
   name: 'Home',
-  components: {EventCard, Map, TeamMember},
+  components: {EventCard, Map},
   data() {
     return {
       markers: [],
@@ -97,26 +90,13 @@ export default {
     google: gmapApi,
   },
   mounted() {
-    this.$api.get('/v1/events').then(response => {
-      this.events = response.data || [];
-      Promise.all(this.events.map(event => this.geocode(event))).then(() => {
-        this.upcoming();
-      });
-    })
-    .catch(error => {
-      console.error(error);
-    });
-    this.$api.get('/v1/alliance/evangelists').then(response => {
-      this.evangelists = response.data || [];
-    })
-    .catch(error => {
-      console.error(error);
+    // Geocode our events
+    this.events = this.$events;
+    Promise.all(this.events.map(event => this.geocode(event))).then(() => {
+      this.upcoming();
     });
   },
   methods: {
-    evangelistToggle() {
-      this.selector = 'evangelists';
-    },
     getIcon(color = 'grey') {
       return {
         path: this.google.maps.SymbolPath.CIRCLE,
