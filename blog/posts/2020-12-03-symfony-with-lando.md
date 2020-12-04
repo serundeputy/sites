@@ -149,10 +149,10 @@ Symfony environment.
 ## What Next?
 
 This demo is pretty simple, but Lando is extremely flexible and can accommodate 
-the much more complicated stacks. For instance, if your application requires
-Redis, you can add reference Lando's [Redis Documentation](https://docs.lando.dev/config/redis.html#supported-versions)
+much more complicated stacks. For instance, if your application requires
+Redis, you can reference Lando's [Redis Documentation](https://docs.lando.dev/config/redis.html#supported-versions)
 and add it to `.lando.yml`. Once you change the Lando file, running `lando rebuild`
-will rebuild the stack with Redis.
+will rebuild the stack with Redis. `lando info` will reveal the Redis connection info.
 
 You're not limited to the services Lando lists. If you have less common or completely
 custom services, use the [Compose](https://docs.lando.dev/config/compose.html) service
