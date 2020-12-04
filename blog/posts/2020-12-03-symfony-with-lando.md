@@ -1,7 +1,7 @@
 ---
 title: Symfony Development with Lando
 metaTitle: Symfony Development with Lando | Lando
-description: It's official! There is now a Symfony Recipe available for Lando!
+description: It's official! Symfony support has been baked into Lando!
 summary: Learn how easy it is to develop locally with Symfony and Lando
 date: 2020-12-03
 original:
@@ -76,7 +76,7 @@ should look somethingn like this:
 
 ```
  NAME            myapp                                               
- LOCATION        /Users/mmilano/projects/tandem/lando-symfony-recipe 
+ LOCATION        /Users/mmilano/projects/myapp
  SERVICES        appserver, database                                 
  APPSERVER URLS  https://localhost:32826                             
                  http://localhost:32828                              
