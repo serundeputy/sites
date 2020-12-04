@@ -127,7 +127,7 @@ class DefaultController extends AbstractController
 
 ## Setting up the Database
 
-You can get credentials for a Lando environment by running `lando info`.
+You can get database credentials for a Lando environment by running `lando info`.
 
 In our case, the credentials are as follows:
 ```
