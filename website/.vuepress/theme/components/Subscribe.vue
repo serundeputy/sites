@@ -86,10 +86,12 @@ export default {
 .subscribe
   margin: auto
   width: 90%
+  max-width: 500px
   padding: 2em 0
   text-align: center
   h3
     color: $landoPink
+    margin-bottom: .5em;
   &.subscribe-dark
     background-color: darken($landoBlue, 12%)
     h3
