@@ -17,9 +17,13 @@ whyTitle: Learn How To...
 whys:
 - title: Save Time Onboarding.
   details: Get your projects rolling in minutes rather than hours or days.
+  image: /images/onboarding.svg
 - title: Integrate with Acquia Cloud.
   details: Using the new Acquia Cloud/Lando integration for fun and profit.
+  image: /images/cloud.svg
 - title: Turn Development Process into Code.
   details: Using Lando tooling and build steps, transform your organization's manual processes into reliable code.
+  image: /images/process.svg
 - title: Answer Your Team's Burning Questions
   details: Let's talk about everything you want to know about Lando (but were afraid to ask).
+  image: /images/questions.svg
