@@ -95,8 +95,7 @@ export default {
     padding: 0
     display: none
   .hero-header
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding: 6em 0em
   .hero-left, .hero-right
     display: inline-block
     vertical-align: top
@@ -109,6 +108,7 @@ export default {
     width: 100%
     margin-right: 60px
     padding: 0em
+    max-width: 400px
   .hero-primary
     .button
       margin: .1em

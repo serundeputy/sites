@@ -15,12 +15,13 @@
           <h2> {{ whyTitle }} </h2>
 
           <div class="point" v-for="(why, index) in whys" :key="index">
+            <img v-if="why.image" :src="why.image" />
             <h3>{{ why.title }}</h3>
             <p>{{ why.details }}</p>
           </div>
         </div>
       </div>
-      <Usage slot="page-bottom" />
+      <Usage v-if="usage" slot="page-bottom" />
       <div id="subscribe" v-if="Object.keys(subscribe).length > 0" slot="page-bottom">
         <div class="inner">
           <Subscribe
@@ -85,10 +86,27 @@ export default {
     .inner
       max-width: 900px
 #whys
-  h3
-    padding: 0
-  p
-    margin: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  background-color: $accentColor
+  background-color: #fff
+  padding-bottom: 5%
+  .inner
+    max-width: 900px
+    margin: 0 auto
+    text-align: center
+    padding: 0 1.5em
+  .point
+    width: 50%
+    display: inline-block
+    vertical-align: top
+    box-sizing: border-box
+    padding: 1em 2em
+    img
+      max-height: 200px
+      padding: 0
 .join-alliance
   #content
     #subscribe
