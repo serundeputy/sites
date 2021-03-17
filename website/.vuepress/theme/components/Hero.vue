@@ -1,5 +1,5 @@
 <template>
-  <div id="hero">
+  <div id="hero-component">
     <div class="inner">
       <div class="hero-header">
         <div class="hero-left">
@@ -75,7 +75,7 @@ export default {
 </script>
 
 <style lang="stylus">
-#hero
+#hero-component
   display: flex
   align-items: center
   flex-direction: column
