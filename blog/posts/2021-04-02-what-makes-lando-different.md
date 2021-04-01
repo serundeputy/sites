@@ -3,7 +3,7 @@ title: What Makes Lando Different?
 metaTitle: What Makes Lando Different? | Lando
 description: You have many choices for dev tools. What makes Lando different?
 summary: You have many choices for dev tools, particularly for local development. What makes Lando different?
-date: 2021-03-24 12:00:00
+date: 2021-04-02 12:00:00
 
 author: Alec Reynolds
 pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
@@ -112,19 +112,17 @@ Read more about Lando Tooling commands here: [https://docs.lando.dev/config/tool
 
 > **"So is Lando just a shill for [INSERT NAME OF HOSTING PROVIDER HERE]?"**
 
-Most dev tools have a not-so-secret purpose: they're an integral part of channeling developers down a sales funnel.
+Most dev tools have a not-so-secret purpose: they're a delicious morsel of bait waiting to lure developers so they can become the coy in a walled garden.
 
-Local by Flywheel, DDEV, Acquia Dev Desktop, even Pantheon LocalDev (full disclosure: built on Lando with help from the Lando team): all of these tools attempt to funnel developers towards a given ecosystem and keep them within it.
-
-By contrast, Lando has focused on connecting together different tools and providers. We've purposefully courted a cohort of competitor companies as sponsors; today Acquia, Amazee.io, Blackmesh, Pantheon, and Platform.sh all sponsor Lando to one degree or another, while competing fiercely in the hosting marketplace.
+Sure, things may be nice within the confines of the garden. You're hand-fed prized solutions by ever-helpful staff, eager to see you succeed on their platform. However, in the competition to keep you in their garden, many companies create dev tools that make it easy to come into the garden, but harder to get out or move between them.
 
 ### Don't Take the Bait.
 
-**"Open source" shouldn't be a lure to bait developers into your pond.** To be sure, useful dev tools can come out of this approach, and we won't begrudge anyone for trying to make money. But if you're going to bite the bait, make sure you know if the hook underneath has barbs! Understand the ecosystems your dev tools come from. Consider how the organizations in question make money. Do their philosophies and business models align with your goals?
+**"Open source" shouldn't be a lure to bait developers into a single pond.** To be sure, useful dev tools can come out of this approach, and we won't begrudge anyone for trying to make money. But if you're going to bite the bait, make sure you know if the hook underneath has barbs! Understand the ecosystems your dev tools come from. Consider how the organizations in question make money. Do their philosophies and business models align with your goals?
 
-Lando thinks that great open source projects are streams, not fish hooks. We acknowledge the reality that, as web developers, we have to choose various "ponds" to swim in. Selecting hosting providers, CI/CD services, operating systems, IDEs: all of these put us into different pools of solutions. We accept their limits in exchange for the freedom of not having to dig our own swimming hole.
+Lando thinks that great open source projects are streams, not fish hooks. As modern web developers with diverse needs, we have to choose various "ponds" to swim in. Selecting hosting providers, CI/CD services, operating systems, IDEs: all of these put us into different pools of solutions. We accept their limits in exchange for the freedom of not having to dig our own swimming hole.
 
-Lando's primary goal is to serve developers by linking those ecosystems together and respecting the realities of modern web development. Particularly if you work at an  rather than a funnel that benefits one over another.
+Lando's primary goal is to serve developers by linking those ecosystems together and respecting the realities of modern web development. A cohort of competitor companies sponsor Lando. As of this writing, Acquia, Amazee.io, Blackmesh, Pantheon, and Platform.sh all sponsor Lando to one degree or another, while competing fiercely in the hosting marketplace. This is a strength that will grow with upcoming improvements in Lando 4.0.
 
 ## 4. Lando is YOU.
 
@@ -134,17 +132,17 @@ Lando is more than a dev tool: it's a movement, a community that's pushing to ma
 
 That's why new people are always hopping on [the Lando Slack](https://launchpass.com/devwithlando), where over 1.6K Lando users gather to ask questions, help each other, and share their favorite moments from Spaceballs.
 
-That's why we made [DevQuest](https://devquest.lando.dev/), a podcast solely dedicated to Lando users and others who are trying to liberate themselves through their adventuring in the tech world.
+That's why Lando makes [DevQuest](https://devquest.lando.dev/), a podcast solely dedicated to Lando users and others who are trying to liberate themselves through their adventuring in the tech world.
 
-It's why individual developers and companies [contribute to the Lando project.](https://github.com/sponsors/lando) and why we're making Lando 4.0, aiming to reduce the barriers to contributing code while increasing the possibilities of what Lando can do.
+It's why individual developers and companies [contribute to the Lando project.](https://github.com/sponsors/lando) and why Lando 4.0 will reduce the barriers to contributing code while increasing the possibilities of what Lando can do.
 
 ### Developers of the World Unite
 
 <img style="float:right; margin: 20px; object-fit:cover; border-radius:50%;" src="/images/LandoAlliance.jpg" alt="Lando liberating developers fist in the air picture." />
 
 
-Ultimately, Lando as a technology will become irrelevant, but the trust and community we've built will survive far longer than any dev tool. We can't be solely focused on solving problems like local development, build automation, testing, deployment. We need to stay attuned to the broader context of our work, to the changing realities of web development. We need to find more ways to not only allow ourselves to thrive within the tech world, but to help others enjoy its fruits and avoid its dangers.
+Ultimately, Lando as a technology will become irrelevant, but the Lando community and its spirit will survive far longer than any dev tool. We can't be solely focused on solving problems like local development, build automation, testing, deployment. We need to stay attuned to the broader context of our work, to the changing realities of web development. We need to find more ways to not only allow ourselves to thrive within the tech world, but to help others enjoy its fruits and avoid its dangers.
 
-Lando started because a couple of developers wanted to free their teammates from drudgery. Today it's expanded to help thousands of developers get more work done and collaborate more easily. With your power, tomorrow we could elevate thousands of new developers into creative, well-compensated careers.
+Lando started because a couple of developers wanted to free their teammates from drudgery. Today it's expanded to help thousands of developers get more work done and collaborate more easily. With our power united, tomorrow we could elevate thousands of new developers into creative, well-compensated careers.
 
 A better world is possible for all developers. Can we build it together?
