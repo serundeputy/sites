@@ -31,7 +31,8 @@ Docker Compose wants you describe each step in baking the infrastructure for a L
 **Compare this Landofile...**
 
 ```yaml
-recipe: drupal                        
+name: myapp
+recipe: drupal9
 ```
 
 **...with the equivelant `docker-compose.yml`:**
@@ -112,7 +113,7 @@ Read more about Lando Tooling commands here: [https://docs.lando.dev/config/tool
 
 > **"So is Lando just a shill for [INSERT NAME OF HOSTING PROVIDER HERE]?"**
 
-Most dev tools have a not-so-secret purpose: they're a delicious morsel of bait waiting to lure developers so they can become the coy in a walled garden.
+Most dev tools have a not-so-secret purpose: they're a delicious morsel of bait waiting to lure developers so they can become the koi in a walled garden.
 
 Sure, things may be nice within the confines of the garden. You're hand-fed prized solutions by ever-helpful staff, eager to see you succeed on their platform. However, in the competition to keep you in their garden, many companies create dev tools that make it easy to come into the garden, but harder to get out or move between them.
 
