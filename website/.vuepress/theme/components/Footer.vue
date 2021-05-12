@@ -104,7 +104,7 @@
               <ul>
                 <li><a href="https://github.com/lando/lando/issues" target="_blank">GitHub</a></li>
                 <li><a href="https://launchpass.com/devwithlando" target="_blank">Slack</a></li>
-                <li><a href="https://github.com/lando/lando/tree/master/examples" target="_blank">Code Samples</a></li>
+                <li><a href="https://github.com/lando/cli/tree/main/examples" target="_blank">Code Samples</a></li>
                 <li><a href="https://www.youtube.com/channel/UCl_QBNuGJNoo7yH-n18K7Kg" target="_blank">YouTube</a></li>
               </ul>
               <h4>Kalabox</h4>
