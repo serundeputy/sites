@@ -31,7 +31,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'A Liberating Dev Tool For All Your Projects',
+      default: 'Instant Dev Environments For Every Project',
     },
     byline: {
       type: String,

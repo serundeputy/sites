@@ -8,7 +8,7 @@
           </div>
           <div class="hero-right">
             <h2 class="hide">Lando.</h2>
-            <h1>A Liberating Dev Tool<br/> For All Your Projects</h1>
+            <h1>Dev Environments for Every Project</h1>
             <div class="byline">
               <p>{{ data.byline }}</p>
             </div>
@@ -104,6 +104,7 @@
     </div>
 
     <Usage />
+    <Patriots />
     <Ready />
   </div>
 </template>
@@ -113,6 +114,7 @@
 import CarbonAds from '@theme/components/CarbonAds.vue';
 import Ready from '@theme/components/Ready.vue';
 import Usage from '@theme/components/Usage.vue';
+import Patriots from '@theme/components/Patriots.vue';
 
 // Hideable menu ids
 const toggleableMenu = [
@@ -121,7 +123,7 @@ const toggleableMenu = [
 ];
 
 export default {
-  components: {CarbonAds, Ready, Usage},
+  components: {CarbonAds, Ready, Usage, Patriots},
   data() {
     return {
       data: {},
@@ -370,7 +372,7 @@ export default {
     #hero
       padding: 40px 40px 30px
       h1
-        font-size: 3em
+        font-size: 2em
       h2
         display: block
         color: #ffffff
@@ -396,7 +398,7 @@ export default {
       .byline
         padding-top: 3em
         p
-          font-size: 1.2em
+          font-size: 1em
       .button
         font-size: 1.2em
         width: 100%
