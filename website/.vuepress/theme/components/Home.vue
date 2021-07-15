@@ -8,7 +8,7 @@
           </div>
           <div class="hero-right">
             <h2 class="hide">Lando.</h2>
-            <h1>Dev Environments for Every Project</h1>
+            <h1>Start Coding Instantly</h1>
             <div class="byline">
               <p>{{ data.byline }}</p>
             </div>
