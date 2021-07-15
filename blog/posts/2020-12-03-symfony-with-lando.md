@@ -94,7 +94,7 @@ Instead of `bin/console` you will use `lando console`.
 Let's create a home page by using the `maker` bundle.
 
 ```bash
-lando make:controller DefaultController
+lando console make:controller DefaultController
 ```
 
 This creates a new file: `src/Controller/DefaultController.php`.
