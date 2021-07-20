@@ -61,6 +61,8 @@ export default {
 
 <style lang="stylus">
 #content
+  a
+    text-decoration: underline
   margin-top: 0
   #hero
     background-image: url("/images/space.jpg")
