@@ -68,6 +68,7 @@ module.exports = {
       {text: 'Blog', link: 'https://blog.lando.dev'},
       {text: 'Events & Meetups', link: 'https://events.lando.dev'},
       {text: 'Services & Support', link: 'https://thinktandem.io/contact/'},
+      {text: 'Careers', link: '/careers/'},
     ],
   },
 };

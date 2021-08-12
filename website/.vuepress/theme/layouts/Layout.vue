@@ -147,6 +147,9 @@ export default {
     h3
       padding-left: 0
       margin-left: -8px
+    ul
+      li
+        font-size 1.2em
 @media (max-width: $MQMobile)
   #content
     .button

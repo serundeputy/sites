@@ -1,17 +1,26 @@
 <template>
-  <div v-if="url" class="video-responsive">
+  <div
+    v-if="vid"
+    class="video-responsive"
+  >
     <lazy-component tag="div">
-      <iframe width="560" height="315" :src="url" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe
+        width="560"
+        height="315"
+        :src="`https://www.youtube.com/embed/${vid}`"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
     </lazy-component>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'YouTube',
   props: {
-    url: {
+    vid: {
       type: String,
       required: true,
     },
@@ -21,7 +30,8 @@ export default {
 
 <style lang="stylus">
 .video-responsive
-  margin-top 1em
+  margin-top 2em
+  margin-bottom 2em
   overflow hidden
   padding-bottom 56.25%
   position relative
