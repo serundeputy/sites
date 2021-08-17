@@ -51,8 +51,10 @@ You don’t need to have any of the below skills, but it would be a lot cooler i
 
 ### Location Requirements
 
-Lando is currently a remote team however to apply you must be available for meetings 8AM-5PM PST. Much of our team is in EST and we have a mandatory daily standup at 8AM PST Please do not apply if you do not fit these criteria.
+Lando is a mostly remote team however to apply you must be available for meetings 8AM-5PM PT. Much of our team is ET and we have a mandatory daily standup at 8AM PT. Please do not apply if you do not fit these criteria.
 
-Also note that we may open an engineering office in Washington, DC when it is COVID-safe to do so. If we do and it is COVID-safe then we will likely want you to come into the office a reasonable amount of times per week.
+Also note that we may open an engineering office in Washington, DC when it is COVID-safe to do so. If we do and you are local to the DC area then we will likely want you to come into the office a reasonable amount of times per week.
+
+If you are not in the DC area, that's ok! Still apply!
 
 <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc2vkesq59BblKo8ZX-R1hKTrHphh1kmsg4FgWV1WH5BKEjHQ/viewform" class="button blue">APPLY NOW!</a>
