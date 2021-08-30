@@ -1,8 +1,8 @@
 ---
 title: Lando + Hugo [+ ARM]
 metaTitle: Lando + Hugo [+ ARM] | Lando
-description: Developing a static Hugo site with lando and a team on multiple underlying machine chipsets. 
-summary: Developing a static Hugo site with lando and a team on multiple underlying machine chipsets.
+description: Developing a static Hugo site with Lando and a team on varying chipsets. 
+summary: Developing a static Hugo site with lando and a team on varying chipsets.
 date: 2021-08-27 12:30:00
 
 author: Geoff St. Pierre
@@ -15,15 +15,15 @@ tags:
   - devops
 ---
 
-tl;dr Developing a static Hugo site with lando and a team on multiple underlying machine chipsets.
+tl;dr Developing a static Hugo site with Lando and a team on varying chipsets.
 
 ## 🔧 Use Case 🔧
 
-Our team is made up of developers in multiple locations on Linux, Intel Macs, M1 Macs, etc. Our documentation is written on the [Hugo](https://github.com/gohugoio/hugo) static site generator. Hugo is great, but it was not long after rollout that various developers inside and outside of the documentation team were running into local dev stack dependency nightmares 😱.
+Our team is made up of developers in multiple locations on Linux, Intel Macs, M1 Macs, etc. Our documentation is written using the [Hugo](https://github.com/gohugoio/hugo) static site generator. Hugo is great, but it was not long after rollout that various developers inside and outside of the documentation team were running into local dev stack dependency nightmares 😱.
 
 ## 🔥 Lando to the Rescue 🔥
 
-Burn down all those different versions of `node`, `npm`, `hugo` cli etc. Put A L L the necessary tooling into to the dev stack managed by lando.  But we still had the different underlying chipsets to deal with. The magic bullet came by building the `hugo` cli from source via `go install --tags extended`.  The `extended` part is what allows us to watch and compile sass and rebuild new content.
+Our first step was easy: we burned down all those different versions of `node`, `npm`, `hugo` cli etc and put A L L the necessary tooling into the dev stack managed by Lando.  But we still had the different underlying chipsets to deal with! The magic bullet came by building the `hugo` cli from source via `go install --tags extended`.  The `extended` part is what allows us to watch and compile SASS and rebuild new content.
 
 ```yaml
     build:
@@ -34,7 +34,7 @@ Burn down all those different versions of `node`, `npm`, `hugo` cli etc. Put A L
 
 ```
 
-By building form source this allows go to detect the chipset and build the right version of `hugo` cli per developer.
+By building form source, this allows Go to detect the chipset and build the right version of `hugo` cli per developer.
 
 ## 🛋️ Living the Easy Life 🛋️
 
